@@ -86,6 +86,5 @@ gulp.task('watch:copy', function () {
 });
 
 gulp.task('default', ['copy:assets:dev', 'run:frontend', 'watch:copy']);
-gulp.task('watch', ['copy:assets:dev', 'build:static:dev', 'serve:frontend', 'watch:build', 'watch:copy']);
 gulp.task('hot', ['copy:assets:dev', 'run:frontend:hot', 'watch:copy']);
 gulp.task('build:production', ['build:static:production', 'copy:assets:production'])
