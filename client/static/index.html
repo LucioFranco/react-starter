@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta
+    name="viewport"
+    content="user-scalable=no,
+    initial-scale=1,
+    maximum-scale=1,
+    minimum-scale=1,
+    width=device-width">
+    <meta name=”viewport” content=”width=1024, minimal-ui”>
+    <title>React-Starter</title>
+
+    <!-- @if NODE_ENV='production' -->
+    <link rel="stylesheet" href="/assets/bundle.css">
+    <!-- @endif -->
+
+    <!--[if lt IE 9]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="app"></div>
+
+
+    <!-- @if NODE_ENV='production' -->
+    <script src="/assets/vendor.bundle.js"></script>
+    <script src="/assets/bundle.js"></script>
+    <!-- @endif -->
+    <!-- @if NODE_ENV='dev' -->
+    <script src="http://localhost:8080/assets/bundle.js"></script>
+    <!-- @endif -->
+  </body>
+</html>
